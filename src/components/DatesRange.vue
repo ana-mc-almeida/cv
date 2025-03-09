@@ -1,0 +1,69 @@
+<template>
+  <p class="dates" v-if="totalMonths === 0">{{ startDateString }}</p>
+  <p class="dates" v-else>{{ totalTime }} · {{ startDateString }} - {{ endDateString }}</p>
+</template>
+
+<script>
+export default {
+  props: {
+    startDate: {
+      type: String,
+      required: true,
+    },
+    endDate: {
+      type: String,
+      default: null,
+    },
+  },
+  computed: {
+    totalMonths() {
+      const start = this.parseDate(this.startDate)
+      const end = this.endDate ? this.parseDate(this.endDate) : new Date()
+
+      const yearsDiff = end.getFullYear() - start.getFullYear()
+      const monthsDiff = end.getMonth() - start.getMonth()
+
+      let totalMonths = yearsDiff * 12 + monthsDiff
+      if (totalMonths < 0) {
+        totalMonths = 0
+      }
+      return totalMonths
+    },
+    totalTime() {
+      if (this.totalMonths >= 12) {
+        const years = Math.floor(this.totalMonths / 12)
+        const months = this.totalMonths % 12
+        return `${years} anos ${months} meses`
+      } else {
+        return `${this.totalMonths} meses`
+      }
+    },
+    startDateString() {
+      return this.formatDate(this.startDate)
+    },
+    endDateString() {
+      if (!this.endDate) return 'current'
+      return this.formatDate(this.endDate)
+    },
+  },
+  methods: {
+    formatDate(dateString) {
+      const date = this.parseDate(dateString)
+      const options = { year: 'numeric', month: 'short' }
+      return date.toLocaleDateString('en-US', options)
+    },
+    parseDate(dateString) {
+      const [day, month, year] = dateString.split('-').map((num) => parseInt(num, 10))
+      return new Date(year, month - 1, day)
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.dates {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+</style>
