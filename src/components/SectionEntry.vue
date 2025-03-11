@@ -1,10 +1,15 @@
 <template>
   <div class="entry-item">
-    <div class="titles" v-if="mainTitle || subTitle">
+    <div class="titles" :class="titlesInLine ? 'titles-in-line' : ''" v-if="mainTitle || subTitle">
       <h3 v-if="mainTitle" class="main-title">{{ mainTitle }}</h3>
       <h4 v-if="subTitle" class="sub-title">{{ subTitle }}</h4>
     </div>
-    <DatesRange v-if="startDate" :startDate="startDate" :endDate="endDate" />
+    <DatesRange
+      v-if="startDate"
+      :startDate="startDate"
+      :endDate="endDate"
+      :showTotalTime="showTotalTime"
+    />
     <!-- <p class="location">{{ location }}</p> -->
     <p v-if="description" class="description">{{ description }}</p>
 
@@ -27,6 +32,10 @@ export default {
       type: String,
       default: null,
     },
+    titlesInLine: {
+      type: Boolean,
+      default: true,
+    },
     startDate: {
       type: String,
       default: null,
@@ -34,6 +43,10 @@ export default {
     endDate: {
       type: String,
       default: null,
+    },
+    showTotalTime: {
+      type: Boolean,
+      default: true,
     },
     // location: {
     //   type: String,
@@ -68,6 +81,16 @@ export default {
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+}
+
+.titles-in-line {
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+
+  .sub-title {
+    text-align: left;
+  }
 }
 
 .main-title {

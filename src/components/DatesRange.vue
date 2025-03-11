@@ -1,6 +1,5 @@
 <template>
-  <p class="dates" v-if="totalMonths === 0">{{ startDateString }}</p>
-  <p class="dates" v-else>{{ totalTime }} · {{ startDateString }} - {{ endDateString }}</p>
+  <p class="dates">{{ finalString }}</p>
 </template>
 
 <script>
@@ -13,6 +12,10 @@ export default {
     endDate: {
       type: String,
       default: null,
+    },
+    showTotalTime: {
+      type: Boolean,
+      default: true,
     },
   },
   computed: {
@@ -33,7 +36,7 @@ export default {
       if (this.totalMonths >= 12) {
         const years = Math.floor(this.totalMonths / 12)
         const months = this.totalMonths % 12
-        return `${years} anos ${months} meses`
+        return `${years} anos ${months} meses` // FIXME: 0 meses is wrong
       } else {
         return `${this.totalMonths} meses`
       }
@@ -44,6 +47,11 @@ export default {
     endDateString() {
       if (!this.endDate) return 'current'
       return this.formatDate(this.endDate)
+    },
+    finalString() {
+      if (this.totalMonths === 0) return this.startDateString
+      if (!this.showTotalTime) return this.startDateString + ' - ' + this.endDateString
+      return this.totalTime + ' · ' + this.startDateString + ' - ' + this.endDateString
     },
   },
   methods: {

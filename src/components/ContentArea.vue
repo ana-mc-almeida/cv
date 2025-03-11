@@ -43,6 +43,7 @@
         mainTitle="ExpoCIC Virtual - Project Manager | Full Stack Developer"
         subTitle="CIC"
         startDate="31-10-2020"
+        endDate="01-10-2021"
         description="ExpoCIC interactiva e online, criada com o intuito de substituir a ExpoCIC presencial, uma vez que esta não foi possível realizar
 devido à pandemia do COVID-19."
       />

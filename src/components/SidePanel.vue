@@ -53,7 +53,12 @@
     </SectionContainer>
     <SectionContainer title="Voluntariado">
       <SectionEntry subTitle="MIUP 2021" startDate="16-10-2021" endDate="16-10-2021" />
-      <SectionEntry subTitle="JN Solidário" startDate="14-04-2021" endDate="05-05-2021" />
+      <SectionEntry
+        subTitle="JN Solidário"
+        startDate="14-04-2021"
+        endDate="05-05-2021"
+        :showTotalTime="false"
+      />
       <SectionEntry
         subTitle="Legião da Boa Vontade"
         description="Distribuição de comida e roupa aos sem-abrigo, no Porto, através da associação Legião da Boa Vontade"
