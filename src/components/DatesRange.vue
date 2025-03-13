@@ -36,7 +36,8 @@ export default {
       if (this.totalMonths >= 12) {
         const years = Math.floor(this.totalMonths / 12)
         const months = this.totalMonths % 12
-        return `${years} anos ${months} meses` // FIXME: 0 meses is wrong
+        if (months !== 0) return `${years} anos ${months} meses` // FIXME: not '1 anos'
+        return `${years} anos`
       } else {
         return `${this.totalMonths} meses`
       }
@@ -72,6 +73,6 @@ export default {
 .dates {
   font-size: 13px;
   opacity: 0.7;
-  margin-top: 4px;
+  margin: 0;
 }
 </style>

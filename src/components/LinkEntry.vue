@@ -1,25 +1,27 @@
 <template>
   <div class="contact-item">
-    <a :href="link" target="_blank" class="contact-link">
+    <!-- TODO: this should include alt text -->
+    <!-- FIXME: this should only have hover style if link not null -->
+    <a :href="link" target="_blank" class="contact-link" :style="{ color: color }">
       <!-- Ícones do FontAwesome -->
       <FontAwesomeIcon
         v-if="iconSource === 'fontAwesome' && faIcon"
         :icon="faIcon"
         class="contact-icon"
         :size="iconSize"
+        :style="{ color: color }"
       />
 
       <!-- Ícones do Simple Icons -->
       <svg
         v-else-if="iconSimple"
         class="contact-icon"
-        :style="{ width: iconSizeComputed + 'px', height: iconSizeComputed + 'px' }"
+        :style="{ width: iconSizeComputed + 'px', height: iconSizeComputed + 'px', color: color }"
         :viewBox="iconSimple.viewBox"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path :d="iconSimple.path" fill="currentColor" />
       </svg>
-
       {{ text }}
     </a>
   </div>
@@ -30,6 +32,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import * as solidIcons from '@fortawesome/free-solid-svg-icons'
+import * as regularIcons from '@fortawesome/free-regular-svg-icons'
 import * as brandIcons from '@fortawesome/free-brands-svg-icons'
 import * as simpleIcons from 'simple-icons'
 
@@ -39,6 +42,10 @@ export default {
     icon: {
       type: String,
       default: 'circle',
+    },
+    color: {
+      type: String,
+      default: 'white',
     },
     text: {
       type: String,
@@ -72,7 +79,8 @@ export default {
   },
   computed: {
     faIcon() {
-      const iconPack = this.type === 'fab' ? brandIcons : solidIcons
+      const iconPack =
+        this.type === 'fab' ? brandIcons : this.type === 'regular' ? regularIcons : solidIcons
       const icon = iconPack[`fa${this.capitalize(this.icon)}`]
 
       if (icon) {
@@ -134,7 +142,7 @@ export default {
 }
 
 .contact-icon {
-  color: $primary-color;
+  // color: $primary-color;
   width: 1em;
   height: 1em;
   display: inline-block;
@@ -143,7 +151,7 @@ export default {
 
 .contact-link {
   text-decoration: none;
-  color: $primary-color;
+  // color: $primary-color;
   transition: color 0.3s;
   display: flex;
   align-items: center;

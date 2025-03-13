@@ -15,6 +15,7 @@ export default {
   },
   methods: {
     exportToPDF() {
+      // FIXME: text should be selectable
       const element = this.cvContainer
 
       const options = {

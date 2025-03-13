@@ -25,15 +25,38 @@
         type="fab"
         iconSize="lg"
       />
+      <!-- TODO: add link to website -->
+    </SectionContainer>
+    <SectionContainer title="Educação">
+      <SectionEntry
+        subTitle="Mestrado em Engenharia Informática e de Computadores"
+        mainTitle="Instituto Superior Técnico"
+        startDate="1-09-2024"
+        description="Especialização em Engenharia de Software e Ciência de Dados. Os projetos desenvolvidos até ao momento podem ser encontrados no meu github."
+      />
+      <SectionEntry
+        subTitle="Licenciatura em Engenharia Informática e de Computadores"
+        mainTitle="Instituto Superior Técnico"
+        startDate="04-10-2021"
+        endDate="31-07-2024"
+        description="Nota Final: 16
+        Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
+      />
+      <SectionEntry
+        mainTitle="Colégio Internato dos Carvalhos"
+        subTitle="Nível 4 - Ensino Secundário (12º Ano)"
+        startDate="13-09-2018"
+        endDate="13-07-2021"
+        description="Curso de Informática com Planos Próprios pela Via Técnológica."
+      />
     </SectionContainer>
     <SectionContainer title="Línguas">
       <!-- TODO: improve this to include levels -->
-      <LinkEntry text="Português" iconSize="2xs" />
-      <LinkEntry text="Inglês" iconSize="2xs" />
-      <LinkEntry text="Espanhol" iconSize="2xs" />
+      <LinkEntry text="Português - Nativo" iconSize="2xs" type="regular" />
+      <LinkEntry text="Inglês - Avançado" iconSize="2xs" type="regular" />
+      <LinkEntry text="Espanhol - Intermediário" iconSize="2xs" type="regular" />
     </SectionContainer>
-    <SectionContainer title="Linguagens">
-      <!-- TODO: Missing a lot of stuff -->
+    <!-- <SectionContainer title="Linguagens">
       <div style="display: flex; gap: 0.5rem">
         <LinkEntry icon="html5" type="fab" iconSize="2xl" />
         <LinkEntry icon="css" type="fab" iconSize="2xl" />
@@ -42,16 +65,16 @@
         <LinkEntry icon="javascript" type="fab" iconSize="2xl" />
       </div>
     </SectionContainer>
-    <SectionContainer title="Tools">
-      <!-- TODO: Missing a lot of stuff -->
+    -->
+    <!-- <SectionContainer title="Tools">
       <div style="display: flex; gap: 0.5rem">
         <LinkEntry icon="vuedotjs" type="fab" iconSize="2xl" />
         <LinkEntry icon="nodedotjs" type="fab" iconSize="2xl" />
         <LinkEntry icon="postman" type="fab" iconSize="2xl" />
         <LinkEntry icon="godotengine" type="fab" iconSize="2xl" />
       </div>
-    </SectionContainer>
-    <SectionContainer title="Voluntariado">
+    </SectionContainer> -->
+    <!-- <SectionContainer title="Voluntariado">
       <SectionEntry subTitle="MIUP 2021" startDate="16-10-2021" endDate="16-10-2021" />
       <SectionEntry
         subTitle="JN Solidário"
@@ -64,7 +87,7 @@
         description="Distribuição de comida e roupa aos sem-abrigo, no Porto, através da associação Legião da Boa Vontade"
       />
       <SectionEntry subTitle="Banco Alimentar contra a Fome" />
-    </SectionContainer>
+    </SectionContainer> -->
     <!-- <SectionContainer title="Interests">
       <div style="display: flex; gap: 1rem">
         <LinkEntry icon="futbol" iconSize="2xl" />
@@ -100,7 +123,7 @@ export default {
 .side-panel {
   background: $secondary-color;
   color: $primary-color;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -109,8 +132,8 @@ export default {
 }
 
 img {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  width: 150px;
+  border-radius: 100%;
+  margin: 2rem 0 1rem 0;
 }
 </style>
