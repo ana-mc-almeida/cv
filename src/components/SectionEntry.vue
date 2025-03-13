@@ -18,7 +18,7 @@
         />
         <!-- <p class="location">{{ location }}</p> -->
       </div>
-      <!-- <div class="centered-div">
+      <div class="centered-div">
         <LinkEntry
           v-for="(icon, index) in icons"
           :key="index"
@@ -29,7 +29,7 @@
           style="margin: 0 2px 0 0"
           iconSource="simpleIcons"
         />
-      </div> -->
+      </div>
     </div>
     <p v-if="description" class="description">{{ description }}</p>
     <hr class="divider" />

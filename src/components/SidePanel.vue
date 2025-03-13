@@ -133,7 +133,7 @@ export default {
 
 img {
   width: 150px;
-  border-radius: 100%;
+  border-radius: 50%;
   margin: 2rem 0 1rem 0;
 }
 </style>
