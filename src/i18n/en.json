@@ -1,4 +1,8 @@
 {
+  "actions": {
+    "change-language": "Change Language",
+    "export-to-pdf": "Export to PDF"
+  },
   "short-profile": "Computer Engineering and Computers",
   "experience": {
     "title": "Experience",

@@ -1,8 +1,10 @@
 <template>
   <div class="options-bar">
-    <button class="button primary-button" @click="exportToPDF">Exportar para PDF</button>
+    <button class="button primary-button" @click="exportToPDF">
+      {{ $t('actions.export-to-pdf') }}
+    </button>
     <button class="button primary-button" @click="changeLanguage">
-      Change language: {{ otherLanguage }}
+      {{ otherLanguageString }}
     </button>
   </div>
 </template>
@@ -25,6 +27,9 @@ export default {
     otherLanguage() {
       return this.$i18n.locale === 'pt' ? 'en' : 'pt'
     },
+    otherLanguageString() {
+      return this.$i18n.locale === 'pt' ? 'English' : 'Português'
+    },
   },
   methods: {
     exportToPDF() {
@@ -44,7 +49,6 @@ export default {
     },
     changeLanguage() {
       this.$i18n.locale = this.otherLanguage
-      console.log('Language changed to', l)
     },
   },
 }

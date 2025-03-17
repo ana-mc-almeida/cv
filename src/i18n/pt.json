@@ -1,4 +1,8 @@
 {
+  "actions": {
+    "change-language": "Mudar Idioma",
+    "export-to-pdf": "Exportar para PDF"
+  },
   "short-profile": "Engenharia Informática e de Computadores",
   "experience": {
     "title": "Experiência",
