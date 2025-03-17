@@ -1,7 +1,7 @@
 <template>
   <div class="side-panel">
     <!-- TODO: make img container prettier -->
-    <img src="@/assets/profile_picture.jpg" alt="Ana Margarida" />
+    <img src="@/assets/profile_picture.jpg" :alt="$t('my-name')" />
     <SectionContainer title="Contactos">
       <LinkEntry icon="house" text="Vila Nova de Gaia, Portugal" iconSize="lg" />
       <LinkEntry
@@ -27,34 +27,44 @@
       />
       <!-- TODO: add link to website -->
     </SectionContainer>
-    <SectionContainer title="Educação">
+    <SectionContainer :title="$t('education.title')">
       <SectionEntry
-        subTitle="Mestrado em Engenharia Informática e de Computadores"
-        mainTitle="Instituto Superior Técnico"
+        :subTitle="$t('education.masters.title')"
+        :mainTitle="$t('ist')"
         startDate="1-09-2024"
-        description="Especialização em Engenharia de Software e Ciência de Dados. Os projetos desenvolvidos até ao momento podem ser encontrados no meu github."
+        :description="$t('education.masters.description')"
       />
       <SectionEntry
-        subTitle="Licenciatura em Engenharia Informática e de Computadores"
-        mainTitle="Instituto Superior Técnico"
+        :subTitle="$t('education.bachelors.title')"
+        :mainTitle="$t('ist')"
         startDate="04-10-2021"
         endDate="31-07-2024"
-        description="Nota Final: 16
-        Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
+        :description="$t('education.bachelors.description')"
       />
       <SectionEntry
-        mainTitle="Colégio Internato dos Carvalhos"
-        subTitle="Nível 4 - Ensino Secundário (12º Ano)"
+        :mainTitle="$t('cic')"
+        :subTitle="$t('education.high-school.title')"
         startDate="13-09-2018"
         endDate="13-07-2021"
-        description="Curso de Informática com Planos Próprios pela Via Técnológica."
+        :description="$t('education.high-school.description')"
       />
     </SectionContainer>
-    <SectionContainer title="Línguas">
-      <!-- TODO: improve this to include levels -->
-      <LinkEntry text="Português - Nativo" iconSize="2xs" type="regular" />
-      <LinkEntry text="Inglês - Avançado" iconSize="2xs" type="regular" />
-      <LinkEntry text="Espanhol - Intermediário" iconSize="2xs" type="regular" />
+    <SectionContainer :title="$t('languages.title')">
+      <LinkEntry
+        :text="$t('languages.portuguese.title') + ' - ' + $t('languages.portuguese.level')"
+        iconSize="2xs"
+        type="regular"
+      />
+      <LinkEntry
+        :text="$t('languages.spanish.title') + ' - ' + $t('languages.spanish.level')"
+        iconSize="2xs"
+        type="regular"
+      />
+      <LinkEntry
+        :text="$t('languages.english.title') + ' - ' + $t('languages.english.level')"
+        iconSize="2xs"
+        type="regular"
+      />
     </SectionContainer>
     <!-- <SectionContainer title="Linguagens">
       <div style="display: flex; gap: 0.5rem">

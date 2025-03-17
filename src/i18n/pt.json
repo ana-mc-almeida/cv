@@ -39,15 +39,15 @@
   },
   "education": {
     "title": "Educação",
-    "master": {
+    "masters": {
       "title": "Mestrado em Engenharia Informática e de Computadores",
       "description": "Especialização em Engenharia de Software e Ciência de Dados. Os projetos desenvolvidos até ao momento podem ser encontrados no meu github."
     },
-    "degree": {
+    "bachelors": {
       "title": "Licenciatura em Engenharia Informática e de Computadores",
       "description": "Nota Final: 16. Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
     },
-    "secondary": {
+    "high-school": {
       "title": "Nível 4 - Ensino Secundário (12º Ano)",
       "description": "Curso de Informática com Planos Próprios pela Via Tecnológica."
     }

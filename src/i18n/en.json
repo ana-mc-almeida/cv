@@ -33,5 +33,29 @@
   },
   "volunteering": {
     "title": "Volunteering"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "education": {
+    "title": "Education",
+    "masters": {
+      "title": "Master's in Computer Science and Engineering",
+      "description": "Specialization in Software Engineering and Data Science. The projects developed so far can be found on my GitHub."
+    },
+    "bachelors": {
+      "title": "Bachelor's in Computer Science and Engineering",
+      "description": "Final Grade: 16. Most of the projects developed throughout the course can be found on my GitHub."
+    },
+    "high-school": {
+      "title": "Level 4 - Secondary Education (12th Grade)",
+      "description": "Computer Science Course with Customized Curriculum through the Technological Pathway."
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "portuguese": { "title": "Portuguese", "level": "Native" },
+    "english": { "title": "English", "level": "Advanced" },
+    "spanish": { "title": "Spanish", "level": "Intermediate" }
   }
 }
