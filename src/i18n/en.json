@@ -1,0 +1,65 @@
+{
+  "actions": {
+    "change-language": "Change Language",
+    "export-to-pdf": "Export to PDF"
+  },
+  "short-profile": "Computer Engineering and Computers",
+  "experience": {
+    "title": "Experience",
+    "dsi": {
+      "title": "Full Stack Developer",
+      "description": "Development of features for administrative and academic applications within the IST universe, such as 'Scholar,' 'Cologne,' 'Shuttle,' 'Link-Shortener,' etc.",
+      "technologies": "Use of technologies such as Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab, and SCSS."
+    },
+    "ambidata": {
+      "title": "Software Engineer",
+      "description": "Software development and support to the development team. ",
+      "technologies": "Use of software and digital platforms, such as Postman and AzureDevOps."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "expocic": {
+      "title": "ExpoCIC Virtual - Project Manager and Full Stack Developer",
+      "description": "Interactive and online ExpoCIC, created to replace the in-person ExpoCIC, which could not take place due to the COVID-19 pandemic.",
+      "technologies": "Use of technologies such as PHP, MySQL, JavaScript, HTML, CSS, and Bootstrap."
+    },
+    "pap": {
+      "title": "Professional Aptitude Project",
+      "description": "After the Workplace Training at Ambidata, I was invited to create a new version of an application for the same company.",
+      "technologies": "Use of technologies such as .NET, Visual Studio Code, ClickOnce, and DevExpress."
+    },
+    "depressure": {
+      "title": "(De)Pressure",
+      "description": "(De)Pressure is an app created to help people manage their mental health through a safe and customizable space, tracking the user’s journey over time.",
+      "technologies": "Use of Figma."
+    }
+  },
+  "volunteering": {
+    "title": "Volunteering"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "education": {
+    "title": "Education",
+    "masters": {
+      "title": "Master's in Computer Science and Engineering",
+      "description": "Specialization in Software Engineering and Data Science. The projects developed so far can be found on my GitHub."
+    },
+    "bachelors": {
+      "title": "Bachelor's in Computer Science and Engineering",
+      "description": "Final Grade: 16. Most of the projects developed throughout the course can be found on my GitHub."
+    },
+    "high-school": {
+      "title": "Level 4 - Secondary Education (12th Grade)",
+      "description": "Computer Science Course with Customized Curriculum through the Technological Pathway."
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "portuguese": { "title": "Portuguese", "level": "Native" },
+    "english": { "title": "English", "level": "Advanced" },
+    "spanish": { "title": "Spanish", "level": "Intermediate" }
+  }
+}

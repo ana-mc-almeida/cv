@@ -1,6 +1,11 @@
 <template>
   <div class="options-bar">
-    <button class="export-button" @click="exportToPDF">Exportar para PDF</button>
+    <button class="button primary-button" @click="exportToPDF">
+      {{ $t('actions.export-to-pdf') }}
+    </button>
+    <button class="button primary-button" @click="changeLanguage">
+      {{ otherLanguageString }}
+    </button>
   </div>
 </template>
 
@@ -11,6 +16,19 @@ export default {
   props: {
     cvContainer: {
       type: Object,
+    },
+  },
+  data() {
+    return {
+      languge: 'pt',
+    }
+  },
+  computed: {
+    otherLanguage() {
+      return this.$i18n.locale === 'pt' ? 'en' : 'pt'
+    },
+    otherLanguageString() {
+      return this.$i18n.locale === 'pt' ? 'English' : 'Português'
     },
   },
   methods: {
@@ -29,6 +47,9 @@ export default {
 
       html2pdf().set(options).from(element).save()
     },
+    changeLanguage() {
+      this.$i18n.locale = this.otherLanguage
+    },
   },
 }
 </script>
@@ -38,21 +59,25 @@ export default {
 
 .options-bar {
   margin: 1rem;
+  display: flex;
 }
 
-.export-button {
-  // TODO: improve button style
+.button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
-  color: $text-color;
-  background: $primary-color;
-  border: 1px solid transparent;
   cursor: pointer;
   text-align: center;
 }
-.export-button:hover {
+
+.primary-button {
+  // TODO: improve button style
+  color: $text-color;
+  background: $primary-color;
+  border: 1px solid transparent;
+}
+.primary-button:hover {
   background: $secondary-color;
   color: $primary-color;
   border: 1px solid $primary-color;

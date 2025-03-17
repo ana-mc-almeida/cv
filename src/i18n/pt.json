@@ -1,0 +1,65 @@
+{
+  "actions": {
+    "change-language": "Mudar Idioma",
+    "export-to-pdf": "Exportar para PDF"
+  },
+  "short-profile": "Engenharia Informática e de Computadores",
+  "experience": {
+    "title": "Experiência",
+    "dsi": {
+      "title": "Desenvolvedora Full Stack",
+      "description": "Desenvolvimento de funcionalidades para as aplicações administrativas e académicas dentro do universo IST, como 'Scholar', 'Cologne', 'Shuttle', 'Link-Shortener', etc.",
+      "technologies": "Utilização de tecnologias como Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab e SCSS."
+    },
+    "ambidata": {
+      "title": "Engenheira de Software",
+      "description": "Desenvolvimento de software e apoio à equipa de desenvolvimento.",
+      "technologies": "Utilização de softwares e plataformas digitais, como Postman e AzureDevOps."
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "expocic": {
+      "title": "ExpoCIC Virtual - Gestora de Projeto e Desenvolvedora Full Stack",
+      "description": "ExpoCIC interativa e online, criada para substituir a ExpoCIC presencial, que não pôde acontecer devido à pandemia de COVID-19.",
+      "technologies": "Utilização de tecnologias como PHP, MySQL, JavaScript, HTML, CSS e Bootstrap."
+    },
+    "pap": {
+      "title": "Projeto de Aptidão Profissional",
+      "description": "Após a Formação em Contexto de Trabalho na Ambidata, fui convidada a criar uma nova versão de uma aplicação para a mesma empresa.",
+      "technologies": "Utilização de tecnologias como .NET, Visual Studio Code, ClickOnce e DevExpress."
+    },
+    "depressure": {
+      "title": "(De)Pressure",
+      "description": "A (De)Pressure é uma aplicação criada para ajudar as pessoas a gerir a sua saúde mental através de um espaço seguro e personalizável, acompanhando a jornada do utilizador ao longo do tempo.",
+      "technologies": "Utilização de Figma."
+    }
+  },
+  "volunteering": {
+    "title": "Voluntariado"
+  },
+  "contacts": {
+    "title": "Contactos"
+  },
+  "education": {
+    "title": "Educação",
+    "masters": {
+      "title": "Mestrado em Engenharia Informática e de Computadores",
+      "description": "Especialização em Engenharia de Software e Ciência de Dados. Os projetos desenvolvidos até ao momento podem ser encontrados no meu github."
+    },
+    "bachelors": {
+      "title": "Licenciatura em Engenharia Informática e de Computadores",
+      "description": "Nota Final: 16. Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
+    },
+    "high-school": {
+      "title": "Nível 4 - Ensino Secundário (12º Ano)",
+      "description": "Curso de Informática com Planos Próprios pela Via Tecnológica."
+    }
+  },
+  "languages": {
+    "title": "Línguas",
+    "portuguese": { "title": "Português", "level": "Nativo" },
+    "english": { "title": "Inglês", "level": "Avançado" },
+    "spanish": { "title": "Espanhol", "level": "Intermediário" }
+  }
+}
