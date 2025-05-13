@@ -32,15 +32,23 @@
         :subTitle="$t('education.masters.title')"
         :mainTitle="$t('ist')"
         startDate="1-09-2024"
-        :description="$t('education.masters.description')"
-      />
+      >
+        <template #description>
+          <p>{{ $t('education.masters.description') }}</p>
+          <p>{{ $t('education.masters.github') }}</p>
+        </template>
+      </SectionEntry>
       <SectionEntry
         :subTitle="$t('education.bachelors.title')"
         :mainTitle="$t('ist')"
         startDate="04-10-2021"
         endDate="31-07-2024"
-        :description="$t('education.bachelors.description')"
-      />
+      >
+        <template #description>
+          <p>{{ $t('education.bachelors.description') }}</p>
+          <p>{{ $t('education.bachelors.github') }}</p>
+        </template>
+      </SectionEntry>
       <SectionEntry
         :mainTitle="$t('cic')"
         :subTitle="$t('education.high-school.title')"

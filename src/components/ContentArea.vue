@@ -10,19 +10,25 @@
         :mainTitle="$t('experience.dsi.title')"
         :subTitle="$t('ist')"
         startDate="15-01-2023"
-        :description="$t('experience.dsi.description') + ' ' + $t('experience.dsi.technologies')"
         :icons="['nodedotjs', 'vuedotjs', 'mongodb', 'elasticsearch', 'i18next', 'gitlab', 'scss']"
-      />
+      >
+        <template #description>
+          <p>{{ $t('experience.dsi.description') }}</p>
+          <p>{{ $t('experience.dsi.technologies') }}</p>
+        </template>
+      </SectionEntry>
       <SectionEntry
         :mainTitle="$t('experience.ambidata.title')"
         :subTitle="$t('ambidata')"
         startDate="01-07-2020"
         endDate="01-04-2021"
-        :description="
-          $t('experience.ambidata.description') + ' ' + $t('experience.ambidata.technologies')
-        "
         :icons="['postman', 'azuredevops']"
-      />
+      >
+        <template #description>
+          <p>{{ $t('experience.ambidata.description') }}</p>
+          <p>{{ $t('experience.ambidata.technologies') }}</p>
+        </template>
+      </SectionEntry>
     </SectionContainer>
     <SectionContainer :title="$t('projects.title')">
       <SectionEntry
@@ -30,11 +36,13 @@
         :subTitle="$t('cic')"
         startDate="31-10-2020"
         endDate="01-10-2021"
-        :description="
-          $t('projects.expocic.description') + ' ' + $t('projects.expocic.technologies')
-        "
         :icons="['php', 'mysql', 'bootstrap', 'javascript', 'html5', 'css']"
-      />
+      >
+        <template #description>
+          <p>{{ $t('projects.expocic.description') }}</p>
+          <p>{{ $t('projects.expocic.technologies') }}</p>
+        </template>
+      </SectionEntry>
       <SectionEntry
         :mainTitle="$t('projects.pap.title')"
         :subTitle="$t('ambidata')"
