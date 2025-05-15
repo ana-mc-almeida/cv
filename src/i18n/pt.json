@@ -50,11 +50,12 @@
     },
     "bachelors": {
       "title": "Licenciatura em Engenharia Informática e de Computadores",
-      "description": "Nota Final: 16.",
+      "description": "Nota Final: 16/20",
       "github": "Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
     },
     "high-school": {
       "title": "Nível 4 - Ensino Secundário (12º Ano)",
+      "grade": "Nota Final: 19.8/20",
       "description": "Curso de Informática com Planos Próprios pela Via Tecnológica."
     }
   },

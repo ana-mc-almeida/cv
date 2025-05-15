@@ -50,11 +50,12 @@
     },
     "bachelors": {
       "title": "Bachelor's in Computer Science and Engineering",
-      "description": "Final Grade: 16.",
+      "description": "Final Grade: 16/20",
       "github": "Most of the projects developed during the course can be found on my GitHub."
     },
     "high-school": {
       "title": "Level 4 - High School (12th Grade)",
+      "grade": "Final Grade: 19.8/20",
       "description": "Computer Science course with custom plans through the Technological Pathway."
     }
   },

@@ -54,8 +54,12 @@
         :subTitle="$t('education.high-school.title')"
         startDate="13-09-2018"
         endDate="13-07-2021"
-        :description="$t('education.high-school.description')"
-      />
+      >
+        <template #description>
+          <p>{{ $t('education.high-school.grade') }}</p>
+          <p>{{ $t('education.high-school.description') }}</p>
+        </template>
+      </SectionEntry>
     </SectionContainer>
     <SectionContainer :title="$t('languages.title')">
       <LinkEntry
