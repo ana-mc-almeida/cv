@@ -66,5 +66,10 @@
     "portuguese": { "title": "Portuguese", "level": "Native" },
     "english": { "title": "English", "level": "Advanced" },
     "spanish": { "title": "Spanish", "level": "Intermediate" }
+  },
+  "dates": {
+    "years": "year | years",
+    "months": "month | months",
+    "current": "currently"
   }
 }
