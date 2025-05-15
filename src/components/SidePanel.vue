@@ -27,57 +27,6 @@
       />
       <!-- TODO: add link to website -->
     </SectionContainer>
-    <SectionContainer :title="$t('education.title')">
-      <SectionEntry
-        :subTitle="$t('education.masters.title')"
-        :mainTitle="$t('ist')"
-        startDate="1-09-2024"
-      >
-        <template #description>
-          <p>{{ $t('education.masters.description') }}</p>
-          <p>{{ $t('education.masters.github') }}</p>
-        </template>
-      </SectionEntry>
-      <SectionEntry
-        :subTitle="$t('education.bachelors.title')"
-        :mainTitle="$t('ist')"
-        startDate="04-10-2021"
-        endDate="31-07-2024"
-      >
-        <template #description>
-          <p>{{ $t('education.bachelors.description') }}</p>
-          <p>{{ $t('education.bachelors.github') }}</p>
-        </template>
-      </SectionEntry>
-      <SectionEntry
-        :mainTitle="$t('cic')"
-        :subTitle="$t('education.high-school.title')"
-        startDate="13-09-2018"
-        endDate="13-07-2021"
-      >
-        <template #description>
-          <p>{{ $t('education.high-school.grade') }}</p>
-          <p>{{ $t('education.high-school.description') }}</p>
-        </template>
-      </SectionEntry>
-    </SectionContainer>
-    <SectionContainer :title="$t('languages.title')">
-      <LinkEntry
-        :text="$t('languages.portuguese.title') + ' - ' + $t('languages.portuguese.level')"
-        iconSize="2xs"
-        type="regular"
-      />
-      <LinkEntry
-        :text="$t('languages.spanish.title') + ' - ' + $t('languages.spanish.level')"
-        iconSize="2xs"
-        type="regular"
-      />
-      <LinkEntry
-        :text="$t('languages.english.title') + ' - ' + $t('languages.english.level')"
-        iconSize="2xs"
-        type="regular"
-      />
-    </SectionContainer>
     <!-- <SectionContainer title="Linguagens">
       <div style="display: flex; gap: 0.5rem">
         <LinkEntry icon="html5" type="fab" iconSize="2xl" />
@@ -117,6 +66,55 @@
         <LinkEntry icon="suitcase" iconSize="2xl" />
       </div>
     </SectionContainer> -->
+    <SectionContainer :title="$t('projects.title')">
+      <SectionEntry
+        :mainTitle="$t('projects.expocic.title')"
+        :subTitle="$t('cic')"
+        startDate="31-10-2020"
+        endDate="01-05-2021"
+      >
+        <template #description>
+          <p>{{ $t('projects.expocic.description') }}</p>
+          <p>{{ $t('projects.expocic.technologies') }}</p>
+        </template>
+      </SectionEntry>
+      <SectionEntry
+        :mainTitle="$t('projects.pap.title')"
+        :subTitle="$t('ambidata')"
+        startDate="06-01-2021"
+        endDate="22-04-2021"
+      >
+        <template #description>
+          <p>{{ $t('projects.pap.description') }}</p>
+          <p>{{ $t('projects.pap.technologies') }}</p>
+        </template>
+      </SectionEntry>
+      <SectionEntry
+        :mainTitle="$t('projects.depressure.title')"
+        subTitle="Finalista TecStorm'22"
+        startDate="01-01-2022"
+        endDate="01-03-2022"
+        :description="
+          $t('projects.depressure.description') + ' ' + $t('projects.depressure.technologies')
+        "
+      />
+      <SectionEntry mainTitle="Other Projects">
+        <template #description>
+          <LinkEntry
+            icon="osi"
+            link="https://github.com/oppia/oppia"
+            type="fab"
+            text="Oppia Plataform"
+          />
+          <LinkEntry
+            icon="cube"
+            link="https://github.com/TiagoFar78/PrisonEscape/"
+            text="Minecraft PlugIn"
+          />
+          <LinkEntry icon="godotengine" text="Game Jams" />
+        </template>
+      </SectionEntry>
+    </SectionContainer>
   </div>
 </template>
 
@@ -156,6 +154,17 @@ export default {
 img {
   width: 150px;
   border-radius: 50%;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0rem 0;
+}
+
+li {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+  text-align: justify;
+}
+ul {
+  margin: 0;
+  padding-inline-start: 20px;
 }
 </style>

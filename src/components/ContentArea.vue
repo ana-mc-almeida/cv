@@ -30,49 +30,79 @@
         </template>
       </SectionEntry>
     </SectionContainer>
-    <SectionContainer :title="$t('projects.title')">
+    <SectionContainer :title="$t('education.title')">
       <SectionEntry
-        :mainTitle="$t('projects.expocic.title')"
-        :subTitle="$t('cic')"
-        startDate="31-10-2020"
-        endDate="01-10-2021"
-        :icons="['php', 'mysql', 'bootstrap', 'javascript', 'html5', 'css']"
+        :subTitle="$t('education.masters.title')"
+        :mainTitle="$t('ist')"
+        startDate="1-09-2024"
       >
         <template #description>
-          <p>{{ $t('projects.expocic.description') }}</p>
-          <p>{{ $t('projects.expocic.technologies') }}</p>
+          <p style="margin-bottom: 15px">{{ $t('education.masters.description') }}</p>
+          <p>{{ $t('education.masters.grade') }}</p>
+          <p>{{ $t('education.masters.merits') }}</p>
+          <p>
+            {{ $t('education.masters.github') }}
+            <a href="https://github.com/ana-mc-almeida/">Github</a>.
+          </p>
         </template>
       </SectionEntry>
       <SectionEntry
-        :mainTitle="$t('projects.pap.title')"
-        :subTitle="$t('ambidata')"
-        startDate="06-01-2021"
-        endDate="22-04-2021"
-        :description="$t('projects.pap.description') + ' ' + $t('projects.pap.technologies')"
-        :icons="['dotnet', 'devexpress']"
-      />
+        :subTitle="$t('education.bachelors.title')"
+        :mainTitle="$t('ist')"
+        startDate="04-10-2021"
+        endDate="31-07-2024"
+      >
+        <template #description>
+          <p>{{ $t('education.bachelors.description') }}</p>
+          <p>
+            {{ $t('education.bachelors.github') }}
+            <a href="https://github.com/ana-mc-almeida/">Github</a>.
+          </p>
+        </template>
+      </SectionEntry>
       <SectionEntry
-        :mainTitle="$t('projects.depressure.title')"
-        subTitle="Finalista TecStorm'22"
-        startDate="01-01-2022"
-        endDate="01-03-2022"
-        :description="
-          $t('projects.depressure.description') + ' ' + $t('projects.depressure.technologies')
-        "
-        :icons="['figma']"
+        :mainTitle="$t('cic')"
+        :subTitle="$t('education.high-school.title')"
+        startDate="13-09-2018"
+        endDate="13-07-2021"
+      >
+        <template #description>
+          <p>{{ $t('education.high-school.grade') }}</p>
+          <p>{{ $t('education.high-school.description') }}</p>
+        </template>
+      </SectionEntry>
+    </SectionContainer>
+    <SectionContainer :title="$t('languages.title')" class="languages">
+      <LinkEntry
+        :text="$t('languages.portuguese.title') + ' - ' + $t('languages.portuguese.level')"
+        iconSize="2xs"
+        type="regular"
+        color="#1e3a5f"
+      />
+      <LinkEntry
+        :text="$t('languages.english.title') + ' - ' + $t('languages.english.level')"
+        iconSize="2xs"
+        type="regular"
+        color="#1e3a5f"
+      />
+      <LinkEntry
+        :text="$t('languages.spanish.title') + ' - ' + $t('languages.spanish.level')"
+        iconSize="2xs"
+        type="regular"
+        color="#1e3a5f"
       />
     </SectionContainer>
-    <SectionContainer :title="$t('volunteering.title')">
+    <!-- <SectionContainer :title="$t('volunteering.title')">
       <LinkEntry :text="$t('miup')" iconSize="2xs" type="regular" color="#1e3a5f" />
       <LinkEntry :text="$t('jn_solidario')" iconSize="2xs" type="regular" color="#1e3a5f" />
-      <!-- <LinkEntry
+      <LinkEntry
         :text="$t('homeless_distribution')"
         iconSize="2xs"
         type="regular"
         color="#1e3a5f"
-      /> -->
+      />
       <LinkEntry :text="$t('banco-alimentar')" iconSize="2xs" type="regular" color="#1e3a5f" />
-    </SectionContainer>
+    </SectionContainer> -->
   </div>
 </template>
 
@@ -102,5 +132,16 @@ export default {
   flex-direction: column;
   align-items: center;
   flex: 1;
+}
+
+p a {
+  text-decoration: none;
+  color: $secondary-color;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.languages .contact-item {
+  margin-bottom: 5px;
 }
 </style>

@@ -21,7 +21,7 @@
     "title": "Projetos",
     "expocic": {
       "title": "ExpoCIC Virtual - Gestora de Projeto e Desenvolvedora Full Stack",
-      "description": "ExpoCIC interativa e online, criada para substituir a ExpoCIC presencial, que não pôde acontecer devido à pandemia de COVID-19.",
+      "description": "ExpoCIC interativa e online, criada para substituir a ExpoCIC presencial",
       "technologies": "Utilização de tecnologias como PHP, MySQL, JavaScript, HTML, CSS e Bootstrap."
     },
     "pap": {
@@ -46,12 +46,14 @@
     "masters": {
       "title": "Mestrado em Engenharia Informática e de Computadores",
       "description": "Especialização em Engenharia de Software e Ciência de Dados.",
-      "github": "Os projetos desenvolvidos até ao momento podem ser encontrados no meu github."
+      "grade": "Média Atual: 18/20",
+      "merits": "Participação nos prémios de mérito na cadeira 'Análise e Integração de Dados' e na cadeira 'Arquitetura de Software'.",
+      "github": "Os projetos desenvolvidos nestas e noutras cadeiras podem ser encontrados no meu "
     },
     "bachelors": {
       "title": "Licenciatura em Engenharia Informática e de Computadores",
       "description": "Nota Final: 16/20",
-      "github": "Grande parte dos projetos desenvolvidos ao longo do curso podem ser encontrados no meu github."
+      "github": "A maioria dos projetos desenvolvidos durante o curso podem ser encontrados no meu "
     },
     "high-school": {
       "title": "Nível 4 - Ensino Secundário (12º Ano)",
@@ -63,6 +65,6 @@
     "title": "Línguas",
     "portuguese": { "title": "Português", "level": "Nativo" },
     "english": { "title": "Inglês", "level": "Avançado" },
-    "spanish": { "title": "Espanhol", "level": "Intermediário" }
+    "spanish": { "title": "Espanhol", "level": "Intermédio" }
   }
 }

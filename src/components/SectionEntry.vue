@@ -18,7 +18,7 @@
         />
         <!-- <p class="location">{{ location }}</p> -->
       </div>
-      <div class="centered-div">
+      <!-- <div class="centered-div">
         <LinkEntry
           v-for="(icon, index) in icons"
           :key="index"
@@ -29,7 +29,7 @@
           style="margin: 0 2px 0 0"
           iconSource="simpleIcons"
         />
-      </div>
+      </div> -->
     </div>
     <p v-if="description" class="description">{{ description }}</p>
     <slot v-else name="description" />
@@ -140,5 +140,9 @@ export default {
   border-top: 1px dotted $light-blue;
   margin-top: 12px;
   width: 90%;
+}
+
+p {
+  margin-bottom: 5px;
 }
 </style>

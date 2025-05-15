@@ -9,7 +9,7 @@
     "dsi": {
       "title": "Full Stack Developer",
       "description": "Development of features for administrative and academic applications within the IST universe, such as 'Scholar,' 'Cologne,' 'Shuttle,' 'Link-Shortener,' etc.",
-      "technologies": "Use of technologies such as Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab, and SCSS."
+      "technologies": "Use of technologies such as Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab, SCSS, Jest, Cypress, etc."
     },
     "ambidata": {
       "title": "Software Engineer",
@@ -21,17 +21,17 @@
     "title": "Projects",
     "expocic": {
       "title": "ExpoCIC Virtual - Project Manager and Full Stack Developer",
-      "description": "Interactive and online ExpoCIC, created to replace the in-person ExpoCIC, which could not take place due to the COVID-19 pandemic.",
+      "description": "Interactive and online ExpoCIC, created to replace the in-person ExpoCIC.",
       "technologies": "Use of technologies such as PHP, MySQL, JavaScript, HTML, CSS, and Bootstrap."
     },
     "pap": {
       "title": "Professional Aptitude Project",
       "description": "After the Workplace Training at Ambidata, I was invited to create a new version of an application for the same company.",
-      "technologies": "Use of technologies such as .NET, Visual Studio Code, ClickOnce, and DevExpress."
+      "technologies": "Use of technologies such as .NET, ClickOnce and DevExpress."
     },
     "depressure": {
       "title": "(De)Pressure",
-      "description": "(De)Pressure is an app created to help people manage their mental health through a safe and customizable space, tracking the user’s journey over time.",
+      "description": "An app created to help people manage their mental health through a safe and customizable space.",
       "technologies": "Use of Figma."
     }
   },
@@ -46,12 +46,14 @@
     "masters": {
       "title": "Master's in Computer Science and Engineering",
       "description": "Specialization in Software Engineering and Data Science.",
-      "github": "The projects developed so far can be found on my GitHub."
+      "grade": "Current Average Grade: 18/20",
+      "merits": "Participation in the merit awards in the course \"Data Analysis and Integration\" and another in \"Software Architecture\".",
+      "github": "The projects developed in this and other courses can be found in my "
     },
     "bachelors": {
       "title": "Bachelor's in Computer Science and Engineering",
       "description": "Final Grade: 16/20",
-      "github": "Most of the projects developed during the course can be found on my GitHub."
+      "github": "Most of the projects developed during the course can be found on my "
     },
     "high-school": {
       "title": "Level 4 - High School (12th Grade)",
