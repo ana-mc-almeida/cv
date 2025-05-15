@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import html2pdf from 'html2pdf.js'
-
 export default {
   props: {
     cvContainer: {
@@ -33,19 +31,17 @@ export default {
   },
   methods: {
     exportToPDF() {
-      // FIXME: text should be selectable
-      const element = this.cvContainer
+      const optionsBar = document.querySelector('.options-bar')
+      optionsBar.style.display = 'none'
 
-      const options = {
-        margin: 0,
-        filename: 'Curriculum_Vitae.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        enableLinks: true,
-      }
+      const page = document.querySelector('.page')
+      const pageMargin = page.style.margin
+      page.style.margin = '0 auto'
 
-      html2pdf().set(options).from(element).save()
+      window.print()
+
+      optionsBar.style.display = 'flex'
+      page.style.margin = pageMargin
     },
     changeLanguage() {
       this.$i18n.locale = this.otherLanguage
