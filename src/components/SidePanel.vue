@@ -1,7 +1,7 @@
 <template>
   <div class="side-panel">
     <!-- TODO: make img container prettier -->
-    <img src="@/assets/profile_picture.jpg" :alt="$t('my-name')" />
+    <img :src="picturePath" :alt="$t('my-name')" />
     <SectionContainer title="Contactos">
       <LinkEntry icon="house" text="Vila Nova de Gaia, Portugal" iconSize="lg" />
       <LinkEntry
@@ -133,7 +133,7 @@ export default {
   },
   data() {
     return {
-      picturePath: '@/assets/profile_picture.jpg',
+      picturePath: new URL('@/assets/profile_picture_1_1.jpg', import.meta.url).href,
     }
   },
 }
