@@ -36,11 +36,18 @@ export default {
       if (this.totalMonths >= 12) {
         const years = Math.floor(this.totalMonths / 12)
         const months = this.totalMonths % 12
-        if (months !== 0) return `${years} anos ${months} meses` // FIXME: not '1 anos'
-        return `${years} anos`
-      } else {
-        return `${this.totalMonths} meses`
+
+        const yearsString = `${years} ${this.$t('dateRange.years', years)}`
+
+        if (months !== 0) {
+          return yearsString + ' ' +
+            `${months} ${this.$t('dateRange.months', months)}`
+        }
+
+        return yearsString
       }
+
+      return `${this.totalMonths} ${this.$t('dateRange.months', this.totalMonths)}`
     },
     startDateString() {
       return this.formatDate(this.startDate)

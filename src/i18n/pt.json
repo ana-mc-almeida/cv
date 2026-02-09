@@ -3,6 +3,10 @@
     "change-language": "Mudar Idioma",
     "export-to-pdf": "Exportar para PDF"
   },
+  "dateRange": {
+    "years": "ano | anos",
+    "months": "mês | meses"
+  },
   "short-profile": "Engenharia Informática e de Computadores",
   "experience": {
     "title": "Experiência",

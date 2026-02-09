@@ -3,6 +3,10 @@
     "change-language": "Change Language",
     "export-to-pdf": "Export to PDF"
   },
+  "dateRange": {
+    "years": "year | years",
+    "months": "month | months"
+  },
   "short-profile": "Computer Engineering and Computers",
   "experience": {
     "title": "Experience",
