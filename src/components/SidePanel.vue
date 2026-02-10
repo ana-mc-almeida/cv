@@ -3,7 +3,7 @@
     <!-- TODO: make img container prettier -->
     <img :src="picturePath" :alt="$t('my-name')" />
     <SectionContainer title="Contactos">
-      <LinkEntry icon="house" text="Vila Nova de Gaia, Portugal" iconSize="lg" />
+      <!-- <LinkEntry icon="house" text="Vila Nova de Gaia, Portugal" iconSize="lg" /> -->
       <LinkEntry
         icon="envelope"
         link="mailto:ana.margarida2004@gmail.com"
@@ -27,7 +27,17 @@
       />
       <!-- TODO: add link to website -->
     </SectionContainer>
-    <SectionContainer :title="$t('education.title')">
+    <!-- <SectionContainer :title="$t('education.title')">
+      <SectionEntry
+        :subTitle="$t('education.erasmus.title')"
+        :mainTitle="$t('tudelft')"
+        startDate="14-08-2025"
+        endDate="02-02-2026"
+      >
+        <template #description>
+          <p>{{ $t('education.erasmus.description') }}</p>
+        </template>
+      </SectionEntry>
       <SectionEntry
         :subTitle="$t('education.masters.title')"
         :mainTitle="$t('ist')"
@@ -60,6 +70,39 @@
           <p>{{ $t('education.high-school.description') }}</p>
         </template>
       </SectionEntry>
+    </SectionContainer> -->
+    <SectionContainer :title="$t('projects.title')">
+      <SectionEntry
+        :mainTitle="$t('projects.expocic.title')"
+        :subTitle="$t('cic')"
+        startDate="31-10-2020"
+        endDate="01-10-2021"
+        :description="$t('projects.expocic.description') + ' ' + $t('projects.expocic.technologies')"
+        :icons="['php', 'mysql', 'bootstrap', 'javascript', 'html5', 'css']"
+      >
+        <!-- <template #description>
+          <p>{{ $t('projects.expocic.description') }}</p>
+          <p>{{ $t('projects.expocic.technologies') }}</p>
+        </template> -->
+      </SectionEntry>
+      <SectionEntry
+        :mainTitle="$t('projects.pap.title')"
+        :subTitle="$t('ambidata')"
+        startDate="06-01-2021"
+        endDate="22-04-2021"
+        :description="$t('projects.pap.description') + ' ' + $t('projects.pap.technologies')"
+        :icons="['dotnet', 'devexpress']"
+      />
+      <SectionEntry
+        :mainTitle="$t('projects.depressure.title')"
+        subTitle="Finalista TecStorm'22"
+        startDate="01-01-2022"
+        endDate="01-03-2022"
+        :description="
+          $t('projects.depressure.description') + ' ' + $t('projects.depressure.technologies')
+        "
+        :icons="['figma']"
+      />
     </SectionContainer>
     <SectionContainer :title="$t('languages.title')">
       <LinkEntry
@@ -156,6 +199,6 @@ export default {
 img {
   width: 150px;
   border-radius: 50%;
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0 0rem 0;
 }
 </style>

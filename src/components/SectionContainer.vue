@@ -2,7 +2,7 @@
   <div class="section">
     <h2 class="section-title">{{ title }}</h2>
     <div class="underline" />
-    <div class="section-content">
+    <div class="section-content" :class="direction">
       <slot></slot>
     </div>
   </div>
@@ -14,6 +14,13 @@ export default {
     title: {
       type: String,
       required: true,
+    },
+    direction: {
+      type: String,
+      default: 'column',
+      validator(value) {
+        return ['column', 'row'].includes(value)
+      },
     },
   },
 }
@@ -35,8 +42,15 @@ export default {
   display: flex;
 }
 
-.section-content {
+.section-content.column {
   display: flex;
   flex-direction: column;
 }
+
+.section-content.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 </style>

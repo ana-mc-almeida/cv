@@ -12,7 +12,7 @@
     "title": "Experiência",
     "dsi": {
       "title": "Desenvolvedora Full Stack",
-      "description": "Desenvolvimento de funcionalidades para as aplicações administrativas e académicas dentro do universo IST, como 'Scholar', 'Cologne', 'Shuttle', 'Link-Shortener', etc.",
+      "description": "Desenvolvimento de funcionalidades para as aplicações administrativas e académicas dentro do universo IST, como 'Scholar'.",
       "technologies": "Utilização de tecnologias como Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab e SCSS."
     },
     "ambidata": {
@@ -47,6 +47,10 @@
   },
   "education": {
     "title": "Educação",
+    "erasmus": {
+      "title": "Erasmus+ - TU Delft",
+      "description": "Programa de intercâmbio internacional na TU Delft, onde frequentei disciplinas como 'Modelação e Análise de Dados de Sistemas Complexos' e 'Sistemas de Software'."
+    },
     "masters": {
       "title": "Mestrado em Engenharia Informática e de Computadores",
       "description": "Especialização em Engenharia de Software e Ciência de Dados.",

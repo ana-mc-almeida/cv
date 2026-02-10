@@ -12,7 +12,7 @@
     "title": "Experience",
     "dsi": {
       "title": "Full Stack Developer",
-      "description": "Development of features for administrative and academic applications within the IST universe, such as 'Scholar,' 'Cologne,' 'Shuttle,' 'Link-Shortener,' etc.",
+      "description": "Development of features for administrative and academic applications within the IST universe, such as 'Scholar'.",
       "technologies": "Use of technologies such as Node.js, Vue.js, MongoDB, Elasticsearch, i18next, GitLab, and SCSS."
     },
     "ambidata": {
@@ -47,6 +47,10 @@
   },
   "education": {
     "title": "Education",
+    "erasmus": {
+      "title": "Erasmus+ - TU Delft",
+      "description": "International exchange program at TU Delft, where I attended courses such as 'Modeling and Data Analysis of Complex Systems' and 'Software Systems'."
+    },
     "masters": {
       "title": "Master's in Computer Science and Engineering",
       "description": "Specialization in Software Engineering and Data Science.",

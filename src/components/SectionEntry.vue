@@ -18,7 +18,7 @@
         />
         <!-- <p class="location">{{ location }}</p> -->
       </div>
-      <div class="centered-div">
+      <!-- <div class="centered-div">
         <LinkEntry
           v-for="(icon, index) in icons"
           :key="index"
@@ -29,7 +29,7 @@
           style="margin: 0 2px 0 0"
           iconSource="simpleIcons"
         />
-      </div>
+      </div> -->
     </div>
     <p v-if="description" class="description">{{ description }}</p>
     <slot v-else name="description" />
@@ -39,10 +39,10 @@
 
 <script>
 import DatesRange from './DatesRange.vue'
-import LinkEntry from './LinkEntry.vue'
+// import LinkEntry from './LinkEntry.vue'
 
 export default {
-  components: { DatesRange, LinkEntry },
+  components: { DatesRange, /*LinkEntry */ },
   props: {
     // TODO: add 'titleInLine' bool to choose if we want main and sub title in the same line or not
     mainTitle: {
